@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+ul, li, img {
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 748px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height:320px;
+}
+ul {
+  list-style: none;
+  position: relative;
+  width: 2000em;
+  height: 300px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+li {
+  float: left;
+  width: 748px;
+  position: absolute;
+}
+.show {
+  display: block!important;
+}
+#pause {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background: #000;
+  bottom: 30px;
+  right: 20px;
+  color: #fff;
+}
+
+
+button {
+  outline: none;
+  background: #ccc;
+  border: none;
+  width: 40px;
+}
+.right {
+  float:left;
+}
+
+
+.numberText {
+  position: absolute;
+  color: #fff;
+  top: 26px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.titleSlider {
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from{opacity: .4}
+  to(opacity: 1)
+}
+@keyframes fade {
+  from{opacity: .4}
+  to(opacity: 1)
+}
